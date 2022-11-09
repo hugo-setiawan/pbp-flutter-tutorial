@@ -225,7 +225,7 @@ class _MyFormPageState extends State<MyFormPage> {
                 // tombol simpan
                 TextButton(
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.blue),
+                    backgroundColor: MaterialStateProperty.all(Colors.green),
                   ),
                   onPressed: () {
                     if (_formKey.currentState!.validate()) {
@@ -243,7 +243,7 @@ class _MyFormPageState extends State<MyFormPage> {
                                     const EdgeInsets.only(top: 20, bottom: 20),
                                 shrinkWrap: true,
                                 children: <Widget>[
-                                  const Center(child: Text('Informasi Data')),
+                                  const Center(child: Text('Informasi Data', style: TextStyle(fontWeight: FontWeight.bold),)),
                                   const SizedBox(height: 20),
                                   Center(
                                       child:
@@ -263,7 +263,7 @@ class _MyFormPageState extends State<MyFormPage> {
                                     onPressed: () {
                                       Navigator.pop(context);
                                     },
-                                    child: const Text('Kembali'),
+                                    child: const Text('Kembali', style: TextStyle(color: Colors.red),),
                                   ),
                                 ],
                               ),
